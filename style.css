@@ -29,16 +29,40 @@ main {
 #form{
     text-align: center;
 }
+#video {
+    width: 100%;
+}
 #pricing {
     display: flex;
-    width: 80%;
-    margin: auto;
+    justify-content: space-between;
 }
+#pricing div {
+    border: 1px solid black;
+    margin: 40px 0px;
+    text-align: center;
+}
+#pricing h3 {
+    background: lightgray;
+    margin: 0px;
+    padding: 16px;
+}
+.bold {
+    font-weight: 700;
+    font-size: 22px;
+}
+#pricing button, #submit{
+    padding: 10px 32px;
+    margin-bottom: 10px;
+    background-color: yellowgreen;
+    outline: none;
+    border: none;
+}
+
 footer {
     background-color: grey;
     text-align: right;
-    margin: 20px 0px 0px 0px;
     color: white;
+    padding: 16px;
 }
 footer a {
     margin: 10px;
@@ -50,6 +74,17 @@ footer p{
     padding: 10px;
 }
 @media screen and (max-width: 480px) {
+    #nav-bar {
+        display: flex;
+        justify-content: flex-end;
+    }
+    #nav-bar a {
+        margin: 0px 10px;
+    }
+    main {
+        width: 80%;
+        margin: auto;
+    }
     #pricing {
         display: block;
     }
